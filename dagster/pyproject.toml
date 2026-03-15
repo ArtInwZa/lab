@@ -1,0 +1,26 @@
+[project]
+name = "dagster-lab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dagster>=1.12.19",
+    "dagster-dbt>=0.28.19",
+    "dagster-webserver>=1.12.19",
+    "dbt-duckdb>=1.10.1",
+    "pandas>=3.0.1",
+    "requests>=2.32.5",
+    "scikit-learn>=1.8.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.dagster]
+module_name = "definitions"

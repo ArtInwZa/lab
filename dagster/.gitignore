@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+
+# Dagster
+.dagster/
+logs/
+
+# DuckDB
+*.duckdb
+*.duckdb.wal
+
+# dbt (transform)
+transform/target/
+transform/dbt_packages/
+transform/dbt_internal_packages/
+transform/logs/
+
+# pytest
+.pytest_cache/

@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: sales_by_month
+    description: Monthly revenue and order count per customer
+    columns:
+      - name: order_month
+        tests:
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+      - name: total_revenue
+        tests:
+          - not_null
